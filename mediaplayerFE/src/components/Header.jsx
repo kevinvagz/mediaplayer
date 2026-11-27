@@ -1,5 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -7,11 +8,15 @@ function Header() {
 
             <Navbar className="bg-dark">
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand>
                         <i className="fa-solid fa-video fa-float text-warning me-3"></i>
-                        <span style={{ color: 'white' }}> Media Player</span>
+                        {/* <span style={{ color: 'white' }}> Media Player</span> */}
 
-                        React Bootstrap
+                        <Link to={'/'} style={{ color: 'white', textDecoration: 'none', fontWeight: '700' }}>
+                            Media Player
+                        </Link>
+
+                    
                     </Navbar.Brand>
                 </Container>
             </Navbar>

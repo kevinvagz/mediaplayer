@@ -5,3 +5,9 @@
     font-family: "Manrope", sans-serif;
     font-weight: 400;
 }
+body {
+  background-color: #0f0f0f;
+}
+.textStyle {
+  color: white;
+}

@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom'
 
-import React from 'react'
 
 function Footer() {
     return (
@@ -19,12 +19,18 @@ function Footer() {
                     </div>
 
                     <div className='links d-flex flex-column ms-3' style={{ color: 'white' }}>
+
                         <h4>LINKS</h4>
-                        LANDING PAGE
-                        <br />
-                        HOME
-                        <br />
-                        WATCH HISTORY
+                        <Link to={'/'} style={{ color: 'white', textDecoration: 'none' }}>
+                            LANDING PAGE
+                        </Link>
+                        <Link to={'/home'} style={{ color: 'white', textDecoration: 'none' }}>
+                            HOME
+                        </Link>
+                        <Link to={'/watch'} style={{ color: 'white', textDecoration: 'none' }}>
+                            WATCH HISTORY
+                        </Link>
+
                     </div>
 
                     <div className='links d-flex flex-column ms-3' style={{ color: 'white' }} >
